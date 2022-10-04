@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #1AA7EC;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.regle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid grey;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.regle:hover{
+    background-color: grey;
+    color: white;
+}
+h2{
+    margin-top: 50px;
+    font-size: 30px;
+}
+.numbers{
+    width: 70%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid #4ADEDE;
+    border-radius: 3px;
+    font-size: 20px;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus{
+    border: 2px solid #4ADEDE;
+    box-shadow: 0 0 2px 2px #4ADEDE;
+}
+.submit{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4ADEDE;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+.submit:hover{
+   background-color: #34b8b8;
+}
+.regles{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    width: 600px;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    opacity: 1;
+    transition: all 0.4s;
+}
+.active.regles{
+    opacity: 0;
+    visibility: hidden;
+    top: 10%;
+}
+.active.container{
+    filter: blur(5px) brightness(0.7);
+}
+.close-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+ul{
+    margin-top: 5px;
+    list-style-type: none;
+}
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 70%; /* 140px * 5 column + 16px scrollbar width */
+    border-spacing: 0;
+    font-size: 15px;
+}
+th{
+    background-color: #4ADEDE;
+    padding: 5px;
+    color: white;
+    font-weight: 400;
+}
+td {
+    background: #ddd;
+    border-bottom: 2px solid white;
+    padding: 5px; 
+}
+tbody, thead tr { display: block; }
+
+tbody {
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+tbody td, thead th {
+    width: 140px;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.hidden{
+    visibility: hidden;
+}
+.finish{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    width: 800px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    transition: all 0.4s;
+    border-radius: 10px;
+    text-align: center;
+}
+.active.finish{
+    opacity: 0;
+    visibility: hidden;
+    top: 10%;
+}

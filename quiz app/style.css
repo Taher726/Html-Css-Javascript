@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*body{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}*/
+.main-container{
+    background-color: #4A98F7;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.7s;
+}
+img{
+    width: 100px;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.container{
+    text-align: center;
+}
+.btn{
+    padding: 30px 50px;
+    background-color: white;
+    background-image: url("images/web-development.png");
+    background-size: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    border: 1
+    3px solid gray;
+    min-width: 200px;
+    margin: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: cursive;
+    cursor: pointer;
+    color: white;
+}
+.btn:hover{
+    background-color: #4A98F7;
+    animation: backgroundSize 2s ease-out;
+}
+.btn:active{
+    background-size: 106%;
+}
+@keyframes backgroundSize{
+    0%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 106%;
+    }
+}
+.active.main-container{
+    filter: blur(5px) brightness(0.7);
+}
+.quiz-container{
+    position: relative;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    width: 600px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    transition: all 0.7s;
+}
+.quiz-header{
+    padding: 4rem;
+}
+.quiz-header h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+ul li label{
+    cursor: pointer;
+}
+#submit{
+    width: 100%;
+    background-color: #4A98F7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1.3rem;
+    transition: all 0.3s;
+}
+#submit:hover{
+    background-color: #3781db;
+}
+.close-icon{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+.active.quiz-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 5%;
+}
+h2{
+    text-align: center;
+}

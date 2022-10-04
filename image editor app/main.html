@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+<body>
+    <input type="file" class="file-input" accept="image/*" hidden>
+    <div class="container">
+        <div class="preview-img">
+            <img src="image-placeholder.svg" alt="preview-img" class="uploadedImg">
+        </div>
+        <div class="changes disabled">
+            <div class="options">
+                <button class="chevronbtn active" id="brightness"><img class="option" src="https://cdn-icons-png.flaticon.com/512/2089/2089622.png"/></button>
+                <button class="chevronbtn" id="saturation"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <button class="chevronbtn" id="inversion"><i class="fa-solid fa-code-compare"></i></button>
+                <button class="chevronbtn" id="grayscale"><img class="option" src="grayscale.png" alt="" id="grayscale"></button>
+                <button class="rotate left" id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                <button class="rotate right" id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                <button class="rotate vartical" id="vartical"><img class="option" src="https://img.icons8.com/external-solid-kendis-lasman/24/000000/external-reflect-tool1-graphic-design-solid-solid-kendis-lasman.png"/></button>
+                <button class="rotate horizontal" id="horizontal"><img class="option" src="https://img.icons8.com/external-solid-kendis-lasman/24/000000/external-reflect-tool-graphic-design-solid-solid-kendis-lasman.png"/></button>
+            </div>
+            <div class="slider">
+                <div class="filter-info">
+                    <p class="name">Brighteness</p>
+                    <p class="value">100%</p>
+                </div>
+                <input type="range" value="100" min="0" max="200">
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+            </div>
+        </div>
+    </div>
+    <div class="tools disabled">
+        <!--<button class="choose">Choose Img</button>
+        <input type="text" placeholder="Enter image name" id="name">
+        <button class="save">Save</button>
+        <button class="reset">Reset Changes</button>-->
+    </div>
+    <div class="chevron-tools">
+        <svg class="chevron1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

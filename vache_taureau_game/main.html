@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vache Taureau Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="container">
+        <button class="regle">Regles</button>
+        <h2 class="title">Give a number</h2>
+        <div class="numbers">
+            <input type="number" required  id="number" maxlength="1">
+            <input type="number" required  id="number" maxlength="1">
+            <input type="number" required  id="number" maxlength="1">
+            <input type="number" required  id="number" maxlength="1">
+        </div>
+        <button class="submit">submit</button>
+        <table class="hidden">
+            <thead>
+                <tr>
+                    <th>Your Number</th>
+                    <th>Response</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="regles active">
+        <div class="close-icon">
+            <i class="fas fa-times fa-2x"></i>
+        </div>
+        <h1>Regles</h1>
+        <p>The goal of Vache Taureau game is to know as quickly as possible a number chosen by the application. The Application can only choose numbers containing 4 digits and these digits are distinct two by two.
+            At each guess the computer gives feedback as follows:</p>
+        <ul>
+            <li>- If your proposed number contains a correct number but which is out of place, the computer displays: Vache(V).</li>
+            <li>- If your proposed number contains a correct number and which is in its place, the computer displays: Taureau (T).</li>
+        </ul>
+    </div>
+    <div class="finish active">
+        <h1 class="word">Congrats You get the number</h1>
+        <div class="close-icon relode">
+            <i class="fas fa-times fa-2x"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
